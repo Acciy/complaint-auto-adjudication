@@ -1,0 +1,6 @@
+{
+  "support_activity_reward": "亲爱的玩家 {{ user_id }}，您好！\n\n关于您反馈的「{{ activity_name }}」奖励未到账问题，经核实：\n您在活动期间已满足领取条件（{{ evidence_summary }}），\n但由于系统发放延迟未能及时到账。\n\n我们已为您补发奖励：{{ reward_name }} x{{ quantity }}，\n工单编号：{{ work_order_id }}，预计 2 小时内到账。\n\n如有其他疑问，欢迎随时联系我们。给您带来的不便敬请谅解！",
+  "reject_not_qualified": "亲爱的玩家 {{ user_id }}，您好！\n\n关于您反馈的「{{ activity_name }}」奖励问题，经核实：\n根据活动规则，{{ rule_explanation }}\n而系统记录显示：{{ evidence_summary }}\n\n因此，本次投诉不符合活动补发条件，无法为您补发奖励。\n{{ suggestion }}\n\n感谢您的理解与支持！",
+  "reject_fraud_ban": "亲爱的玩家 {{ user_id }}，您好！\n\n关于您反馈的账号封禁问题，经风控系统核实：\n您的账号因「{{ ban_reason }}」被系统处以封禁处罚。\n\n{{ evidence_detail }}\n\n根据《用户协议》第 {{ clause }} 条，该行为属于违规操作，\n封禁决定予以维持。如有异议，可通过官网申诉入口提交申诉材料。\n\n感谢您的理解！",
+  "human_review": "亲爱的玩家 {{ user_id }}，您好！\n\n我们已收到您的反馈，由于情况较为复杂（{{ reason }}），\n已转交人工客服团队进行进一步核实。\n\n预计 1-3 个工作日内给您答复，请您耐心等待。\n工单编号：{{ ticket_id }}\n\n感谢您的理解与支持！"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "PRE-001",
+    "complaint_category": "activity_reward",
+    "activity_id": "ACT-SPRING-2026",
+    "verdict": "support",
+    "reasoning": "用户已点击领取按钮，订单完成但奖励未发放，系统日志显示发放队列延迟。属于系统原因，支持补发。",
+    "evidence_summary": "订单ORD-1001已完成，点击时间在活动期内，库存充足。",
+    "created_at": "2026-02-20",
+    "confidence": 0.95
+  },
+  {
+    "id": "PRE-002",
+    "complaint_category": "activity_reward",
+    "activity_id": "ACT-SPRING-2026",
+    "verdict": "reject",
+    "reasoning": "用户仅登录但未点击领取按钮，不满足活动规则的第2条'需在活动页面点击领取按钮'。驳回投诉。",
+    "evidence_summary": "订单ORD-1002显示用户参与活动但clicked_claim=false。",
+    "created_at": "2026-02-22",
+    "confidence": 0.98
+  },
+  {
+    "id": "PRE-003",
+    "complaint_category": "account_ban",
+    "activity_id": "",
+    "verdict": "reject",
+    "reasoning": "风控日志显示该用户同IP批量注册12个账号并脚本领取奖励，属于严重作弊。维持封禁。",
+    "evidence_summary": "风控评分95，标记：批量注册/脚本作弊/IP异常/设备指纹异常。",
+    "created_at": "2026-02-25",
+    "confidence": 0.99
+  },
+  {
+    "id": "PRE-004",
+    "complaint_category": "account_ban",
+    "activity_id": "",
+    "verdict": "human_review",
+    "reasoning": "风控评分55，仅有IP异常标记但无确凿作弊证据，用户声称可能是使用VPN导致。需人工核查。",
+    "evidence_summary": "风控评分55，单条IP异常标记，用户申诉理由合理。",
+    "created_at": "2026-03-01",
+    "confidence": 0.65
+  },
+  {
+    "id": "PRE-005",
+    "complaint_category": "activity_reward",
+    "activity_id": "ACT-ANNIVERSARY-2026",
+    "verdict": "human_review",
+    "reasoning": "用户声称签到满7天，但系统记录显示有2天登录但未签到。存在争议，需人工核对详细日志。",
+    "evidence_summary": "登录记录显示8天登录，但签到记录仅6天。",
+    "created_at": "2026-03-15",
+    "confidence": 0.55
+  }
+]
